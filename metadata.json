@@ -1,0 +1,5 @@
+{
+  "name": "CrunchMasters",
+  "description": "Food service app for CrunchMasters at KNUST, featuring a menu, ordering system, and admin dashboard.",
+  "requestFramePermissions": []
+}
