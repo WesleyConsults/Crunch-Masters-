@@ -117,11 +117,11 @@ export default function Layout() {
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-brand-500 shrink-0" />
-                <span>WhatsApp: +233 50 000 0000</span>
+                <span>Call/WhatsApp: 0551195049 / 0248254648</span>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-brand-500 shrink-0" />
-                <span>hello@crunchmasters.com</span>
+                <span><a href="mailto:CrunchMasters2025@gmail.com" className="hover:text-brand-400 transition-colors">CrunchMasters2025@gmail.com</a></span>
               </li>
             </ul>
           </div>
