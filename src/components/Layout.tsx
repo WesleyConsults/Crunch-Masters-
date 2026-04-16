@@ -11,6 +11,7 @@ export default function Layout() {
     { name: "Home", path: "/" },
     { name: "Menu", path: "/menu" },
     { name: "Our Story", path: "/about" },
+    { name: "Manifesto", path: "/manifesto" },
     { name: "Community", path: "/community" },
     { name: "Partner/Admin", path: "/admin" },
   ];
@@ -143,8 +144,13 @@ export default function Layout() {
             </ul>
           </div>
         </div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-8 border-t border-stone-800 text-sm text-stone-500 text-center">
-          &copy; {new Date().getFullYear()} CrunchMasters. All rights reserved.
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-8 border-t border-stone-800 text-sm text-stone-500 text-center md:flex md:items-center md:justify-between">
+          <div className="mb-4 md:mb-0">
+            &copy; {new Date().getFullYear()} CrunchMasters. All rights reserved.
+          </div>
+          <div>
+            <Link to="/terms" className="hover:text-brand-500 transition-colors">Terms & Conditions</Link>
+          </div>
         </div>
       </footer>
     </div>
