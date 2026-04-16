@@ -13,6 +13,7 @@ export default function Layout() {
     { name: "Our Story", path: "/about" },
     { name: "Manifesto", path: "/manifesto" },
     { name: "Community", path: "/community" },
+    { name: "Support Us", path: "/support" },
     { name: "Partner/Admin", path: "/admin" },
   ];
 
@@ -148,7 +149,8 @@ export default function Layout() {
           <div className="mb-4 md:mb-0">
             &copy; {new Date().getFullYear()} CrunchMasters. All rights reserved.
           </div>
-          <div>
+          <div className="flex items-center gap-4">
+            <Link to="/support" className="hover:text-brand-500 transition-colors">Support & Invest</Link>
             <Link to="/terms" className="hover:text-brand-500 transition-colors">Terms & Conditions</Link>
           </div>
         </div>
