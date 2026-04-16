@@ -39,7 +39,7 @@ export default function Home() {
             className="text-5xl md:text-7xl font-extrabold text-white tracking-tight mb-6"
           >
             The Best Braised Rice <br className="hidden md:block" />
-            <span className="text-orange-500">on Campus.</span>
+            <span className="text-brand-500">on Campus.</span>
           </motion.h1>
 
           <motion.p
@@ -59,7 +59,7 @@ export default function Home() {
           >
             <Link
               to="/menu"
-              className="w-full sm:w-auto bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-full font-bold text-lg transition-transform hover:scale-105 flex items-center justify-center gap-2 shadow-xl shadow-orange-500/20"
+              className="w-full sm:w-auto bg-brand-500 hover:bg-brand-600 text-white px-8 py-4 rounded-full font-bold text-lg transition-transform hover:scale-105 flex items-center justify-center gap-2 shadow-xl shadow-brand-500/20"
             >
               Order Now <ArrowRight className="w-5 h-5" />
             </Link>
@@ -71,8 +71,8 @@ export default function Home() {
       <section className="py-12 bg-white border-b border-stone-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <Link to="/menu" className="group flex items-center gap-4 p-6 rounded-2xl bg-stone-50 hover:bg-orange-50 transition-colors border border-stone-100 hover:border-orange-100">
-              <div className="w-12 h-12 bg-orange-100 text-orange-600 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+            <Link to="/menu" className="group flex items-center gap-4 p-6 rounded-2xl bg-stone-50 hover:bg-brand-50 transition-colors border border-stone-100 hover:border-brand-100">
+              <div className="w-12 h-12 bg-brand-100 text-brand-600 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
                 <MenuIcon className="w-6 h-6" />
               </div>
               <div>
@@ -81,8 +81,8 @@ export default function Home() {
               </div>
             </Link>
             
-            <a href="#location" className="group flex items-center gap-4 p-6 rounded-2xl bg-stone-50 hover:bg-orange-50 transition-colors border border-stone-100 hover:border-orange-100">
-              <div className="w-12 h-12 bg-orange-100 text-orange-600 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+            <a href="#location" className="group flex items-center gap-4 p-6 rounded-2xl bg-stone-50 hover:bg-brand-50 transition-colors border border-stone-100 hover:border-brand-100">
+              <div className="w-12 h-12 bg-brand-100 text-brand-600 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
                 <MapPin className="w-6 h-6" />
               </div>
               <div>
@@ -91,8 +91,8 @@ export default function Home() {
               </div>
             </a>
 
-            <Link to="/menu?category=specials" className="group flex items-center gap-4 p-6 rounded-2xl bg-stone-50 hover:bg-orange-50 transition-colors border border-stone-100 hover:border-orange-100">
-              <div className="w-12 h-12 bg-orange-100 text-orange-600 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+            <Link to="/menu?category=specials" className="group flex items-center gap-4 p-6 rounded-2xl bg-stone-50 hover:bg-brand-50 transition-colors border border-stone-100 hover:border-brand-100">
+              <div className="w-12 h-12 bg-brand-100 text-brand-600 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
                 <Star className="w-6 h-6" />
               </div>
               <div>

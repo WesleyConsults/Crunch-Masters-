@@ -60,27 +60,27 @@ export default function Community() {
             </div>
 
             {/* Newsletter */}
-            <div className="bg-orange-500 rounded-3xl p-8 text-white">
+            <div className="bg-brand-500 rounded-3xl p-8 text-white">
               <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mb-6">
                 <Bell className="w-6 h-6" />
               </div>
               <h3 className="text-2xl font-bold mb-2">Never Miss Out</h3>
-              <p className="text-orange-100 mb-6 text-sm">Get SMS alerts for flash sales and when fresh batches drop.</p>
+              <p className="text-brand-100 mb-6 text-sm">Get SMS alerts for flash sales and when fresh batches drop.</p>
               
               <form className="space-y-3" onSubmit={(e) => { e.preventDefault(); alert('Subscribed!'); }}>
                 <input 
                   type="text" 
                   placeholder="Your Name" 
-                  className="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-orange-200 focus:outline-none focus:ring-2 focus:ring-white"
+                  className="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-brand-200 focus:outline-none focus:ring-2 focus:ring-white"
                   required
                 />
                 <input 
                   type="tel" 
                   placeholder="Phone Number" 
-                  className="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-orange-200 focus:outline-none focus:ring-2 focus:ring-white"
+                  className="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-brand-200 focus:outline-none focus:ring-2 focus:ring-white"
                   required
                 />
-                <button type="submit" className="w-full bg-white text-orange-600 hover:bg-stone-100 py-3 rounded-xl font-bold transition-colors flex items-center justify-center gap-2">
+                <button type="submit" className="w-full bg-white text-brand-600 hover:bg-stone-100 py-3 rounded-xl font-bold transition-colors flex items-center justify-center gap-2">
                   Sign Up <Send className="w-4 h-4" />
                 </button>
               </form>

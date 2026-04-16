@@ -44,7 +44,7 @@ export default function Admin() {
                 placeholder="Password (try: admin123)"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                className="w-full px-4 py-3 rounded-xl border border-stone-200 focus:outline-none focus:ring-2 focus:ring-orange-500 bg-stone-50"
+                className="w-full px-4 py-3 rounded-xl border border-stone-200 focus:outline-none focus:ring-2 focus:ring-brand-500 bg-stone-50"
               />
             </div>
             <button type="submit" className="w-full bg-stone-900 hover:bg-black text-white py-3 rounded-xl font-bold transition-colors">
@@ -62,7 +62,7 @@ export default function Admin() {
                   form.classList.remove('hidden');
                 }
               }}
-              className="text-orange-500 font-medium hover:text-orange-600"
+              className="text-brand-500 font-medium hover:text-brand-600"
             >
               Submit an Inquiry
             </button>
@@ -72,17 +72,17 @@ export default function Admin() {
           <div id="inquiry-form" className="hidden mt-8 pt-8 border-t border-stone-200">
             <h3 className="text-lg font-bold text-stone-900 mb-4">Partner Inquiry</h3>
             <form className="space-y-4" onSubmit={(e) => { e.preventDefault(); alert('Inquiry sent!'); }}>
-              <input type="text" placeholder="Your Name / Organization" required className="w-full px-4 py-2 rounded-lg border border-stone-200 focus:outline-none focus:ring-2 focus:ring-orange-500" />
-              <input type="email" placeholder="Email Address" required className="w-full px-4 py-2 rounded-lg border border-stone-200 focus:outline-none focus:ring-2 focus:ring-orange-500" />
-              <select className="w-full px-4 py-2 rounded-lg border border-stone-200 focus:outline-none focus:ring-2 focus:ring-orange-500 text-stone-600">
+              <input type="text" placeholder="Your Name / Organization" required className="w-full px-4 py-2 rounded-lg border border-stone-200 focus:outline-none focus:ring-2 focus:ring-brand-500" />
+              <input type="email" placeholder="Email Address" required className="w-full px-4 py-2 rounded-lg border border-stone-200 focus:outline-none focus:ring-2 focus:ring-brand-500" />
+              <select className="w-full px-4 py-2 rounded-lg border border-stone-200 focus:outline-none focus:ring-2 focus:ring-brand-500 text-stone-600">
                 <option value="">Select Inquiry Type</option>
                 <option value="catering">Event Catering</option>
                 <option value="faculty">Faculty Partnership</option>
                 <option value="investor">Investment</option>
                 <option value="other">Other</option>
               </select>
-              <textarea placeholder="Message details..." rows={3} required className="w-full px-4 py-2 rounded-lg border border-stone-200 focus:outline-none focus:ring-2 focus:ring-orange-500"></textarea>
-              <button type="submit" className="w-full bg-orange-500 hover:bg-orange-600 text-white py-2 rounded-lg font-medium transition-colors">
+              <textarea placeholder="Message details..." rows={3} required className="w-full px-4 py-2 rounded-lg border border-stone-200 focus:outline-none focus:ring-2 focus:ring-brand-500"></textarea>
+              <button type="submit" className="w-full bg-brand-500 hover:bg-brand-600 text-white py-2 rounded-lg font-medium transition-colors">
                 Send Inquiry
               </button>
             </form>
@@ -125,7 +125,7 @@ export default function Admin() {
           </div>
           <div className="bg-white p-6 rounded-2xl border border-stone-200 shadow-sm">
             <div className="flex items-center gap-4 mb-4">
-              <div className="w-10 h-10 bg-orange-100 text-orange-600 rounded-lg flex items-center justify-center">
+              <div className="w-10 h-10 bg-brand-100 text-brand-600 rounded-lg flex items-center justify-center">
                 <Package className="w-5 h-5" />
               </div>
               <h3 className="font-medium text-stone-600">Orders Today</h3>
@@ -149,7 +149,7 @@ export default function Admin() {
           <div className="bg-white rounded-3xl border border-stone-200 shadow-sm overflow-hidden">
             <div className="p-6 border-b border-stone-100 flex justify-between items-center">
               <h2 className="text-xl font-bold text-stone-900">Live Orders</h2>
-              <span className="bg-orange-100 text-orange-600 px-3 py-1 rounded-full text-xs font-bold">3 Active</span>
+              <span className="bg-brand-100 text-brand-600 px-3 py-1 rounded-full text-xs font-bold">3 Active</span>
             </div>
             <div className="divide-y divide-stone-100">
               {RECENT_ORDERS.map((order) => (

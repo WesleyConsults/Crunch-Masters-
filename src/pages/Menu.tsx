@@ -118,7 +118,7 @@ export default function Menu() {
               <div className="p-5 flex flex-col flex-grow">
                 <div className="flex justify-between items-start mb-2">
                   <h3 className="font-bold text-lg text-stone-900">{item.name}</h3>
-                  <span className="font-bold text-orange-500">GH₵{item.price}</span>
+                  <span className="font-bold text-brand-500">GH₵{item.price}</span>
                 </div>
                 <p className="text-stone-500 text-sm mb-4 flex-grow">{item.description}</p>
                 
@@ -127,7 +127,7 @@ export default function Menu() {
                   onClick={() => addToCart(item.id)}
                   className={`w-full py-3 rounded-xl font-medium flex items-center justify-center gap-2 transition-colors ${
                     item.inStock 
-                      ? "bg-orange-50 text-orange-600 hover:bg-orange-500 hover:text-white" 
+                      ? "bg-brand-50 text-brand-600 hover:bg-brand-500 hover:text-white" 
                       : "bg-stone-100 text-stone-400 cursor-not-allowed"
                   }`}
                 >
@@ -143,7 +143,7 @@ export default function Menu() {
       <div className="w-full lg:w-96 shrink-0">
         <div className="bg-white rounded-3xl border border-stone-200 p-6 sticky top-24 shadow-sm">
           <h2 className="text-2xl font-bold text-stone-900 mb-6 flex items-center gap-2">
-            <ShoppingBag className="w-6 h-6 text-orange-500" />
+            <ShoppingBag className="w-6 h-6 text-brand-500" />
             Your Order
           </h2>
 
@@ -162,7 +162,7 @@ export default function Menu() {
                     <div key={cartItem.id} className="flex justify-between items-center">
                       <div className="flex-1">
                         <h4 className="font-medium text-stone-900 text-sm">{item.name}</h4>
-                        <div className="text-orange-500 font-medium text-sm">GH₵{item.price * cartItem.quantity}</div>
+                        <div className="text-brand-500 font-medium text-sm">GH₵{item.price * cartItem.quantity}</div>
                       </div>
                       <div className="flex items-center gap-3 bg-stone-50 rounded-full px-2 py-1 border border-stone-200">
                         <button onClick={() => removeFromCart(item.id)} className="p-1 text-stone-500 hover:text-stone-900">
@@ -208,7 +208,7 @@ export default function Menu() {
                 )}
                 <div className="flex justify-between text-lg font-bold text-stone-900 pt-2 border-t border-stone-100">
                   <span>Total</span>
-                  <span className="text-orange-500">GH₵{finalTotal}</span>
+                  <span className="text-brand-500">GH₵{finalTotal}</span>
                 </div>
               </div>
 
@@ -222,7 +222,7 @@ export default function Menu() {
                     placeholder="e.g. 054 000 0000"
                     value={momoNumber}
                     onChange={(e) => setMomoNumber(e.target.value)}
-                    className="w-full px-4 py-3 rounded-xl border border-stone-200 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-shadow bg-stone-50"
+                    className="w-full px-4 py-3 rounded-xl border border-stone-200 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent transition-shadow bg-stone-50"
                   />
                 </div>
                 <button

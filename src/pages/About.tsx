@@ -31,9 +31,9 @@ export default function About() {
                 referrerPolicy="no-referrer"
               />
             </div>
-            <div className="absolute -bottom-8 -left-8 bg-orange-500 text-white p-8 rounded-3xl hidden md:block">
+            <div className="absolute -bottom-8 -left-8 bg-brand-500 text-white p-8 rounded-3xl hidden md:block">
               <p className="text-4xl font-bold mb-1">10k+</p>
-              <p className="text-orange-100 font-medium">Bowls Served</p>
+              <p className="text-brand-100 font-medium">Bowls Served</p>
             </div>
           </div>
         </div>
@@ -41,21 +41,21 @@ export default function About() {
         {/* Values */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-24">
           <div className="text-center">
-            <div className="w-16 h-16 bg-orange-100 text-orange-500 rounded-2xl flex items-center justify-center mx-auto mb-6">
+            <div className="w-16 h-16 bg-brand-100 text-brand-500 rounded-2xl flex items-center justify-center mx-auto mb-6">
               <Heart className="w-8 h-8" />
             </div>
             <h3 className="text-xl font-bold text-stone-900 mb-3">Made with Love</h3>
             <p className="text-stone-600">Every bowl is prepped fresh daily. We don't cut corners on flavor.</p>
           </div>
           <div className="text-center">
-            <div className="w-16 h-16 bg-orange-100 text-orange-500 rounded-2xl flex items-center justify-center mx-auto mb-6">
+            <div className="w-16 h-16 bg-brand-100 text-brand-500 rounded-2xl flex items-center justify-center mx-auto mb-6">
               <ShieldCheck className="w-8 h-8" />
             </div>
             <h3 className="text-xl font-bold text-stone-900 mb-3">Quality Standards</h3>
             <p className="text-stone-600">Sourced from local markets, prepared in a spotless kitchen. Hygiene is our priority.</p>
           </div>
           <div className="text-center">
-            <div className="w-16 h-16 bg-orange-100 text-orange-500 rounded-2xl flex items-center justify-center mx-auto mb-6">
+            <div className="w-16 h-16 bg-brand-100 text-brand-500 rounded-2xl flex items-center justify-center mx-auto mb-6">
               <Users className="w-8 h-8" />
             </div>
             <h3 className="text-xl font-bold text-stone-900 mb-3">For the Students</h3>
@@ -78,7 +78,7 @@ export default function About() {
             { name: "Abena Osei", role: "Logistics", image: "https://images.unsplash.com/photo-1531123897727-8f129e1bfa8ea?auto=format&fit=crop&q=80&w=400" },
           ].map((member, i) => (
             <div key={i} className="text-center group">
-              <div className="aspect-square rounded-full overflow-hidden mb-4 border-4 border-stone-100 group-hover:border-orange-200 transition-colors">
+              <div className="aspect-square rounded-full overflow-hidden mb-4 border-4 border-stone-100 group-hover:border-brand-200 transition-colors">
                 <img 
                   src={member.image} 
                   alt={member.name} 
@@ -87,7 +87,7 @@ export default function About() {
                 />
               </div>
               <h3 className="text-lg font-bold text-stone-900">{member.name}</h3>
-              <p className="text-orange-500 font-medium text-sm">{member.role}</p>
+              <p className="text-brand-500 font-medium text-sm">{member.role}</p>
             </div>
           ))}
         </div>
