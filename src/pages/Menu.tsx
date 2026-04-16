@@ -3,15 +3,66 @@ import { motion } from "motion/react";
 import { Plus, Minus, ShoppingBag, CheckCircle2 } from "lucide-react";
 
 // Mock Data
-const MENU_CATEGORIES = ["All", "Main Bowls", "Quick Bites", "Add-ons", "Drinks"];
+const MENU_CATEGORIES = ["All", "Breakfast", "Fried Yam", "Noodles", "Anwamo & Waakye", "Fries", "Extras", "Drinks"];
 
 const MENU_ITEMS = [
-  { id: 1, name: "Classic Braised Rice Bowl", category: "Main Bowls", price: 35, description: "Our signature braised rice with tender beef, veggies, and special sauce.", inStock: true, image: "https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&q=80&w=800" },
-  { id: 2, name: "Spicy Fried Yam & Chicken", category: "Main Bowls", price: 40, description: "Crispy fried yam chunks with spicy grilled chicken wings and shito.", inStock: true, image: "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&q=80&w=800" },
-  { id: 3, name: "Jollof Fiesta", category: "Main Bowls", price: 45, description: "Smoky party jollof with assorted meat and fried plantain.", inStock: false, image: "https://images.unsplash.com/photo-1664992805988-825590a2a11b?auto=format&fit=crop&q=80&w=800" },
-  { id: 4, name: "Kelewele Bites", category: "Quick Bites", price: 15, description: "Spicy diced fried plantain with roasted peanuts.", inStock: true, image: "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&q=80&w=800" },
-  { id: 5, name: "Extra Chicken Wing", category: "Add-ons", price: 10, description: "One piece of our signature grilled chicken wing.", inStock: true, image: "https://images.unsplash.com/photo-1564834724105-918b73d1b9e0?auto=format&fit=crop&q=80&w=800" },
-  { id: 6, name: "Fresh Pineapple Juice", category: "Drinks", price: 12, description: "Freshly squeezed pineapple juice, chilled.", inStock: true, image: "https://images.unsplash.com/photo-1559839914-11aae62e1531?auto=format&fit=crop&q=80&w=800" },
+  // Breakfast Packages
+  { id: 101, name: "Milo/Lipton + Bread & Choc/Margarine", category: "Breakfast", price: 15, description: "Classic hot beverage with bread and your choice of spread.", inStock: true, image: "https://images.unsplash.com/photo-1544787219-7f47ccb7fae6?auto=format&fit=crop&q=80&w=800" },
+  { id: 102, name: "Porridge + Bread & Choc/Margarine", category: "Breakfast", price: 15, description: "Oat, Tom Brown, or Rice water porridge with bread and spread.", inStock: true, image: "https://images.unsplash.com/photo-1517686469429-8bdb88b9f907?auto=format&fit=crop&q=80&w=800" },
+  { id: 103, name: "Milo/Lipton + Bread & Eggs", category: "Breakfast", price: 20, description: "Hot beverage with bread and freshly prepared eggs.", inStock: true, image: "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&q=80&w=800" },
+  { id: 104, name: "Porridge + Bread & Eggs", category: "Breakfast", price: 20, description: "Oat, Tom Brown, or Rice water porridge with bread and eggs.", inStock: true, image: "https://images.unsplash.com/photo-1517686469429-8bdb88b9f907?auto=format&fit=crop&q=80&w=800" },
+  { id: 105, name: "Full Porridge Breakfast", category: "Breakfast", price: 30, description: "Porridge + Bread, Eggs, Sardine & Sausage.", inStock: true, image: "https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?auto=format&fit=crop&q=80&w=800" },
+
+  // Fried Yam Packages
+  { id: 201, name: "Fried Yam + Sausage/Egg", category: "Fried Yam", price: 15, description: "Yam with sausage or egg (fried/boiled) and pepper.", inStock: true, image: "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&q=80&w=800" },
+  { id: 202, name: "Fried Yam + Sausage & Gizzard", category: "Fried Yam", price: 15, description: "Fried yam served with sausage and seasoned gizzard.", inStock: true, image: "https://images.unsplash.com/photo-1628294895950-9805252327bc?auto=format&fit=crop&q=80&w=800" },
+  { id: 203, name: "Fried Yam + Sausage & Egg", category: "Fried Yam", price: 18, description: "Fried yam served with sausage and egg (fried/boiled) with pepper.", inStock: true, image: "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&q=80&w=800" },
+  { id: 204, name: "Fried Yam + Sausage + Gizzard/Egg", category: "Fried Yam", price: 20, description: "Normal package with yam, sausage, and choice of gizzard or egg.", inStock: true, image: "https://images.unsplash.com/photo-1628294895950-9805252327bc?auto=format&fit=crop&q=80&w=800" },
+  { id: 205, name: "Fried Yam + Gizzard + Sausage/Egg", category: "Fried Yam", price: 20, description: "Normal package with yam, gizzard, and choice of sausage or egg.", inStock: true, image: "https://images.unsplash.com/photo-1628294895950-9805252327bc?auto=format&fit=crop&q=80&w=800" },
+  { id: 206, name: "Fried Yam + Fish only", category: "Fried Yam", price: 20, description: "Fried yam served with delicious fried fish.", inStock: true, image: "https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?auto=format&fit=crop&q=80&w=800" },
+  { id: 207, name: "Bossu Yam + Chicken + Extra", category: "Fried Yam", price: 25, description: "Fried yam with chicken and either sausage, egg, or gizzard.", inStock: true, image: "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&q=80&w=800" },
+  { id: 208, name: "Bossu Yam + Fish + Extra", category: "Fried Yam", price: 25, description: "Fried yam with fish and either sausage, gizzard, or egg.", inStock: true, image: "https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?auto=format&fit=crop&q=80&w=800" },
+  { id: 209, name: "Bossu Yam + Pork (Small)", category: "Fried Yam", price: 25, description: "Fried yam served with a small portion of pork.", inStock: true, image: "https://images.unsplash.com/photo-1628294895950-9805252327bc?auto=format&fit=crop&q=80&w=800" },
+  { id: 210, name: "Bossu Yam + Pork (Big)", category: "Fried Yam", price: 30, description: "Fried yam served with a large portion of pork.", inStock: true, image: "https://images.unsplash.com/photo-1628294895950-9805252327bc?auto=format&fit=crop&q=80&w=800" },
+  { id: 211, name: "Bossu Ultimate Yam Package", category: "Fried Yam", price: 30, description: "Fried yam with egg, chicken, and big sausage.", inStock: true, image: "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&q=80&w=800" },
+
+  // Noodles
+  { id: 301, name: "Noodles with Fried Egg (Reg)", category: "Noodles", price: 20, description: "Regular portion noodles with fried egg.", inStock: true, image: "https://images.unsplash.com/photo-1612929633738-8fe44f7ec841?auto=format&fit=crop&q=80&w=800" },
+  { id: 302, name: "Noodles with Fried Egg (Large)", category: "Noodles", price: 40, description: "Large portion noodles with fried egg.", inStock: true, image: "https://images.unsplash.com/photo-1612929633738-8fe44f7ec841?auto=format&fit=crop&q=80&w=800" },
+  { id: 303, name: "Assorted Noodles + Eggs & Sausages (Reg)", category: "Noodles", price: 40, description: "Regular assorted noodles with fried eggs and sausages.", inStock: true, image: "https://images.unsplash.com/photo-1552611052-33e04de081de?auto=format&fit=crop&q=80&w=800" },
+  { id: 304, name: "Assorted Noodles + Eggs & Sausages (Large)", category: "Noodles", price: 50, description: "Large assorted noodles with fried eggs and sausages.", inStock: true, image: "https://images.unsplash.com/photo-1552611052-33e04de081de?auto=format&fit=crop&q=80&w=800" },
+  { id: 305, name: "Assorted Noodles + Chicken & Extra (Reg)", category: "Noodles", price: 50, description: "Regular assorted noodles with chicken and egg/sausages.", inStock: true, image: "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&q=80&w=800" },
+  { id: 306, name: "Assorted Noodles + Chicken & Extra (Large)", category: "Noodles", price: 60, description: "Large assorted noodles with chicken and egg/sausages.", inStock: true, image: "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&q=80&w=800" },
+
+  // Fries
+  { id: 401, name: "Yam Chips + Sausage or Chicken", category: "Fries", price: 25, description: "Crispy yam chips with your choice of sausage or chicken.", inStock: true, image: "https://images.unsplash.com/photo-1585692277358-e36efa0a468d?auto=format&fit=crop&q=80&w=800" },
+  { id: 402, name: "Yam Chips + Sausage & Chicken", category: "Fries", price: 30, description: "Crispy yam chips served with both sausage and chicken.", inStock: true, image: "https://images.unsplash.com/photo-1585692277358-e36efa0a468d?auto=format&fit=crop&q=80&w=800" },
+  { id: 403, name: "Yam Chips + 2 Chicken Pieces & Sausage", category: "Fries", price: 35, description: "Crispy yam chips with 2 pieces of chicken and a sausage.", inStock: true, image: "https://images.unsplash.com/photo-1585692277358-e36efa0a468d?auto=format&fit=crop&q=80&w=800" },
+
+  // Anwamo & Waakye
+  { id: 501, name: "Loaded Anwamo (Small)", category: "Anwamo & Waakye", price: 30, description: "Small portion of our loaded Anwamo.", inStock: true, image: "https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&q=80&w=800" },
+  { id: 502, name: "Loaded Anwamo (Medium)", category: "Anwamo & Waakye", price: 40, description: "Medium portion of our loaded Anwamo.", inStock: true, image: "https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&q=80&w=800" },
+  { id: 503, name: "Loaded Anwamo (Large)", category: "Anwamo & Waakye", price: 50, description: "Large portion of our loaded Anwamo.", inStock: true, image: "https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&q=80&w=800" },
+  { id: 504, name: "Waakye Package (Small)", category: "Anwamo & Waakye", price: 30, description: "Small package of our signature Waakye.", inStock: true, image: "https://images.unsplash.com/photo-1664992805988-825590a2a11b?auto=format&fit=crop&q=80&w=800" },
+  { id: 505, name: "Waakye Package (Medium)", category: "Anwamo & Waakye", price: 40, description: "Medium package of our signature Waakye.", inStock: true, image: "https://images.unsplash.com/photo-1664992805988-825590a2a11b?auto=format&fit=crop&q=80&w=800" },
+  { id: 506, name: "Waakye Package (Large)", category: "Anwamo & Waakye", price: 50, description: "Large package of our signature Waakye.", inStock: true, image: "https://images.unsplash.com/photo-1664992805988-825590a2a11b?auto=format&fit=crop&q=80&w=800" },
+
+  // Extras
+  { id: 601, name: "Fried Yam Only", category: "Extras", price: 10, description: "Portion of fried yam.", inStock: true, image: "https://images.unsplash.com/photo-1585692277358-e36efa0a468d?auto=format&fit=crop&q=80&w=800" },
+  { id: 602, name: "Gizzard", category: "Extras", price: 5, description: "Seasoned gizzard.", inStock: true, image: "https://images.unsplash.com/photo-1628294895950-9805252327bc?auto=format&fit=crop&q=80&w=800" },
+  { id: 603, name: "Small Sausage", category: "Extras", price: 5, description: "Small sausage link.", inStock: true, image: "https://images.unsplash.com/photo-1563514986161-583eb52f4c4a?auto=format&fit=crop&q=80&w=800" },
+  { id: 604, name: "Big Sausage", category: "Extras", price: 8, description: "Large sausage link.", inStock: true, image: "https://images.unsplash.com/photo-1563514986161-583eb52f4c4a?auto=format&fit=crop&q=80&w=800" },
+  { id: 605, name: "Fish", category: "Extras", price: 10, description: "Piece of fried fish.", inStock: true, image: "https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?auto=format&fit=crop&q=80&w=800" },
+  { id: 606, name: "Sausage Sauce", category: "Extras", price: 10, description: "Flavorful sausage sauce.", inStock: true, image: "https://images.unsplash.com/photo-1628294895950-9805252327bc?auto=format&fit=crop&q=80&w=800" },
+  { id: 607, name: "Gizzard Sauce", category: "Extras", price: 10, description: "Spicy gizzard sauce.", inStock: true, image: "https://images.unsplash.com/photo-1628294895950-9805252327bc?auto=format&fit=crop&q=80&w=800" },
+  { id: 608, name: "Chicken (Small)", category: "Extras", price: 15, description: "Small piece of chicken.", inStock: true, image: "https://images.unsplash.com/photo-1564834724105-918b73d1b9e0?auto=format&fit=crop&q=80&w=800" },
+  { id: 609, name: "Chicken (Big)", category: "Extras", price: 20, description: "Large piece of chicken.", inStock: true, image: "https://images.unsplash.com/photo-1564834724105-918b73d1b9e0?auto=format&fit=crop&q=80&w=800" },
+  { id: 610, name: "Pork", category: "Extras", price: 15, description: "Portion of pork.", inStock: true, image: "https://images.unsplash.com/photo-1628294895950-9805252327bc?auto=format&fit=crop&q=80&w=800" },
+  { id: 611, name: "Kosua Preman (Egg)", category: "Extras", price: 5, description: "Boiled or fried egg.", inStock: true, image: "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&q=80&w=800" },
+
+  // Drinks
+  { id: 701, name: "Fresh Kube", category: "Drinks", price: 10, description: "Fresh coconut water.", inStock: true, image: "https://images.unsplash.com/photo-1510521876402-4ec173d1abfa?auto=format&fit=crop&q=80&w=800" },
+  { id: 702, name: "Packaged Kube", category: "Drinks", price: 15, description: "Packaged coconut water (with ice or lime).", inStock: true, image: "https://images.unsplash.com/photo-1510521876402-4ec173d1abfa?auto=format&fit=crop&q=80&w=800" },
 ];
 
 export default function Menu() {
