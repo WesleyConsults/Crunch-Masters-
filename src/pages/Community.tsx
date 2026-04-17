@@ -20,11 +20,18 @@ export default function Community() {
                 <span className="text-2xl">👑</span> Wall of Fame
               </h2>
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
-                {[1, 2, 3, 4, 5, 6].map((i) => (
+                {[
+                  "/shop_counter.jpeg",
+                  "/menu_banner.jpeg",
+                  "/shop_front_banner.jpeg",
+                  "/asset_mockups.jpeg",
+                  "/shop_front_wide.jpeg",
+                  "/asset_logos.jpeg"
+                ].map((imgSrc, i) => (
                   <div key={i} className="relative aspect-square rounded-2xl overflow-hidden group">
                     <img 
-                      src={`https://picsum.photos/seed/customer${i}/400/400`} 
-                      alt="Happy customer" 
+                      src={imgSrc} 
+                      alt="Wall of Fame" 
                       className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                       referrerPolicy="no-referrer"
                     />

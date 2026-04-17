@@ -11,7 +11,7 @@ export default function Home() {
       <section className="relative h-[80vh] min-h-[600px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&q=80&w=2000"
+            src="/branded_bag.jpeg"
             alt="Delicious Braised Rice and Chicken"
             className="w-full h-full object-cover"
             referrerPolicy="no-referrer"
@@ -113,11 +113,17 @@ export default function Home() {
         
         {/* Scrolling Feed Simulation */}
         <div className="flex gap-4 px-4 pb-8 overflow-x-auto snap-x snap-mandatory hide-scrollbar">
-          {[1, 2, 3, 4, 5].map((i) => (
+          {[
+            "/asset_mockups.jpeg", 
+            "/shop_front_wide.jpeg", 
+            "/menu_banner.jpeg", 
+            "/asset_logos.jpeg", 
+            "/shop_counter.jpeg"
+          ].map((imgSrc, i) => (
             <div key={i} className="snap-center shrink-0 w-64 md:w-80 aspect-[9/16] bg-stone-200 rounded-2xl overflow-hidden relative group">
               <img 
-                src={`https://picsum.photos/seed/food${i}/400/700`} 
-                alt="Social post" 
+                src={imgSrc} 
+                alt="CrunchMasters Community" 
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 referrerPolicy="no-referrer"
               />

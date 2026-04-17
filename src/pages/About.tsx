@@ -24,9 +24,9 @@ export default function About() {
           </div>
           <div className="relative">
             <div className="aspect-square rounded-3xl overflow-hidden">
-              <img 
-                src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&q=80&w=1000" 
-                alt="Kitchen prep" 
+              <img
+                src="/shop_front_sign.jpeg" 
+                alt="CrunchMasters Shop" 
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"
               />

@@ -126,8 +126,8 @@ export default function Support() {
           <div className="relative">
             <div className="aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl">
               <img 
-                src="https://images.unsplash.com/photo-1542314831-c6a4d1466046?auto=format&fit=crop&q=80&w=1000" 
-                alt="Professional Kitchen"
+                src="/shop_front_banner.jpeg" 
+                alt="CrunchMasters Professional Operations"
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"
               />
