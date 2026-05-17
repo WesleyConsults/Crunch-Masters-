@@ -14,7 +14,8 @@ export default function Layout() {
     { name: "Manifesto", path: "/manifesto" },
     { name: "Community", path: "/community" },
     { name: "Support Us", path: "/support" },
-    { name: "Partner/Admin", path: "/admin" },
+    { name: "Terms & Conditions", path: "/terms" },
+
   ];
 
   return (
@@ -105,7 +106,7 @@ export default function Layout() {
               <span className="font-bold text-xl tracking-tight text-white">CrunchMasters</span>
             </div>
             <p className="text-sm text-stone-400 max-w-xs">
-              Serving the best Braised Rice and Fried Yam on campus. Quality food, fast service, great vibes.
+              Serving the best Fried Yam and Braised Rice on campus. Quality food, fast service, great vibes.
             </p>
           </div>
           

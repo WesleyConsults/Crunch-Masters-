@@ -12,7 +12,7 @@ export default function Home() {
         <div className="absolute inset-0 z-0">
           <img
             src="/branded_bag.jpeg"
-            alt="Delicious Braised Rice and Chicken"
+            alt="Delicious Fried Yam and Chicken"
             className="w-full h-full object-cover"
             referrerPolicy="no-referrer"
           />
@@ -38,7 +38,7 @@ export default function Home() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-5xl md:text-7xl font-extrabold text-white tracking-tight mb-6"
           >
-            The Best Braised Rice <br className="hidden md:block" />
+            The Best Fried Yam <br className="hidden md:block" />
             <span className="text-brand-500">on Campus.</span>
           </motion.h1>
 

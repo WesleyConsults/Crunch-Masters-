@@ -4,7 +4,7 @@ CrunchMasters is a premium food service application designed for the KNUST commu
 
 ## Features
 
--   **Artisanal Menu**: Curated selection of high-quality meals including our signature Braised Rice and Jollof Fiesta.
+-   **Artisanal Menu**: Curated selection of high-quality meals including our signature Fried Yam and Jollof Fiesta.
 -   **Seamless Navigation**: Fast, responsive React-based interface.
 -   **Admin Dashboard**: Real-time sales tracking, inventory management, and order status monitoring.
 -   **Community Engagement**: Integrated partner inquiry system for catering and collaborations.

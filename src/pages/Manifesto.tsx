@@ -48,7 +48,7 @@ export default function Manifesto() {
             </p>
             
             <p>
-              We are CrunchMasters, and we are absolutely thrilled to open our doors to you, right here on campus! You might know us as the new spot for delicious fries, comforting fried yam, hearty braised rice, and energizing breakfasts. But we want you to know us for something deeper.
+              We are CrunchMasters, and we are absolutely thrilled to open our doors to you, right here on campus! You might know us as the new spot for hearty fried yam, delicious fries, comforting braised rice, and energizing breakfasts. But we want you to know us for something deeper.
             </p>
 
             <p>

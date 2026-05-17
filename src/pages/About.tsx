@@ -19,7 +19,7 @@ export default function About() {
               Campus life is stressful enough. Figuring out what to eat shouldn't be. CrunchMasters was born out of the frustration of long queues and inconsistent food quality at the canteens.
             </p>
             <p className="text-lg text-stone-600 leading-relaxed">
-              We set out to create a menu that hits the spot every single time. Our Braised Rice isn't just rice; it's a carefully crafted recipe designed to give you that home-cooked comfort when you need it most.
+              We set out to create a menu that hits the spot every single time. Our Fried Yam isn't just yam; it's a carefully crafted recipe designed to give you that home-cooked comfort when you need it most.
             </p>
           </div>
           <div className="relative">
