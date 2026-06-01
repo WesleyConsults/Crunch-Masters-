@@ -18,7 +18,7 @@ const MENU_ITEMS: MenuItem[] = [
     name: "Assorted Fried Rice — GH₵30 Package",
     price: 30,
     description: "A tasty single-serving with rich flavor and fresh ingredients.",
-    image: "/assorted_fried_rice_3.jpeg",
+    image: "/assorted_fried_rice_3.webp",
     category: "Rice",
   },
   {
@@ -26,7 +26,7 @@ const MENU_ITEMS: MenuItem[] = [
     name: "Assorted Fried Rice — GH₵40 Package",
     price: 40,
     description: "A more filling portion, perfect for a satisfying meal.",
-    image: "/assorted_fried_rice_2.jpeg",
+    image: "/assorted_fried_rice_2.webp",
     category: "Rice",
   },
   {
@@ -34,7 +34,7 @@ const MENU_ITEMS: MenuItem[] = [
     name: "Assorted Fried Rice — GH₵50 Package",
     price: 50,
     description: "A premium package with extra portions and a richer serving.",
-    image: "/assorted_fried_rice_1.jpeg",
+    image: "/assorted_fried_rice_1.webp",
     category: "Rice",
   },
   {
@@ -42,7 +42,7 @@ const MENU_ITEMS: MenuItem[] = [
     name: "Assorted Fried Rice — GH₵70 Package",
     price: 70,
     description: "A large package, ideal for sharing or a big appetite.",
-    image: "/assorted_fried_rice_4.jpeg",
+    image: "/assorted_fried_rice_4.webp",
     category: "Rice",
   },
 ];
