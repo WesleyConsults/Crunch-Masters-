@@ -16,10 +16,10 @@ const MENU_CATEGORIES = ["All", "Rice"];
 const MENU_ITEMS: MenuItem[] = [
   {
     id: 1,
-    name: "Assorted Fried Rice — GH₵30 Package",
-    price: 30,
+    name: "Assorted Fried Rice — GH₵35 Package",
+    price: 35,
     description: "A tasty single-serving with rich flavor and fresh ingredients.",
-    image: "/assorted_fried_rice_3.webp",
+    image: "/assorted_fried_rice_2.webp",
     category: "Rice",
   },
   {
@@ -27,7 +27,7 @@ const MENU_ITEMS: MenuItem[] = [
     name: "Assorted Fried Rice — GH₵40 Package",
     price: 40,
     description: "A more filling portion, perfect for a satisfying meal.",
-    image: "/assorted_fried_rice_2.webp",
+    image: "/assorted_fried_rice_3.webp",
     category: "Rice",
   },
   {
