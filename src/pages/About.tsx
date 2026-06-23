@@ -72,19 +72,25 @@ export default function About() {
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {[
-            { name: "Chef Kwame", role: "Head Chef", image: "https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&q=80&w=400" },
-            { name: "Ama Serwaa", role: "Operations Manager", image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=400" },
-            { name: "Kojo Mensah", role: "Customer Experience", image: "https://images.unsplash.com/photo-1531384441138-2736e62e0919?auto=format&fit=crop&q=80&w=400" },
-            { name: "Abena Osei", role: "Logistics", image: "https://images.unsplash.com/photo-1531123897727-8f129e1bfa8ea?auto=format&fit=crop&q=80&w=400" },
+            { name: "Bismark Osei-Wusu", role: "Co-founder/Finance and Brand Strategy Lead", image: "/bismark.webp" },
+            { name: "Ama Serwaa", role: "Operations Manager", image: "" },
+            { name: "Kojo Mensah", role: "Customer Experience", image: "" },
+            { name: "Abena Osei", role: "Logistics", image: "" },
           ].map((member, i) => (
             <div key={i} className="text-center group">
-              <div className="aspect-square rounded-full overflow-hidden mb-4 border-4 border-stone-100 group-hover:border-brand-200 transition-colors">
-                <img 
-                  src={member.image} 
-                  alt={member.name} 
-                  className="w-full h-full object-cover"
-                  referrerPolicy="no-referrer"
-                />
+              <div className="aspect-square rounded-full overflow-hidden mb-4 border-4 border-stone-100 group-hover:border-brand-200 transition-colors bg-stone-100">
+                {member.image ? (
+                  <img 
+                    src={member.image} 
+                    alt={member.name} 
+                    className="w-full h-full object-cover"
+                    referrerPolicy="no-referrer"
+                  />
+                ) : (
+                  <div className="w-full h-full bg-stone-200 flex items-center justify-center text-stone-400 font-medium text-2xl">
+                    {member.name.charAt(0)}
+                  </div>
+                )}
               </div>
               <h3 className="text-lg font-bold text-stone-900">{member.name}</h3>
               <p className="text-brand-500 font-medium text-sm">{member.role}</p>
